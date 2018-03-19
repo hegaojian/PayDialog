@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/paydialog_linear"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paypass_close"
+            android:src="@drawable/ic_close"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入支付密码"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:id="@+id/paypass_title"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#e9e8ea"/>
+
+    <TextView
+        android:id="@+id/paypass_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="提现金额：80元"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/pay_linear"
+        android:background="@drawable/pay_editshap"
+        android:layout_below="@+id/pay_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pay_box1"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#e9e8ea" />
+
+        <TextView
+            android:id="@+id/pay_box2"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#e9e8ea" />
+
+        <TextView
+            android:id="@+id/pay_box3"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#e9e8ea" />
+
+        <TextView
+            android:id="@+id/pay_box4"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#e9e8ea" />
+
+        <TextView
+            android:id="@+id/pay_box5"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#e9e8ea" />
+
+        <TextView
+            android:id="@+id/pay_box6"
+            style="@style/InputTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_linear"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/paypass_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="支付密码错误"
+            android:visibility="invisible"
+            android:textColor="#e62c3f"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/paypass_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="忘记密码"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200.1dp">
+        <LinearLayout
+            android:id="@+id/keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:visibility="visible"
+            android:orientation="vertical" >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#e9e8ea" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pay_keyboard_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_gride"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_marginLeft="0.1dp"
+                    android:layout_marginRight="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="2"
+                    android:background="@drawable/selector_gride" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="3"
+                    android:background="@drawable/selector_gride" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pay_keyboard_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="4"
+                    android:background="@drawable/selector_gride" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_marginLeft="0.1dp"
+                    android:layout_marginRight="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="5"
+                    android:background="@drawable/selector_gride" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="6"
+                    android:background="@drawable/selector_gride" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pay_keyboard_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="7"
+                    android:background="@drawable/selector_gride" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_marginLeft="0.1dp"
+                    android:layout_marginRight="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="8"
+                    android:background="@drawable/selector_gride" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_nine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="9"
+                    android:background="@drawable/selector_gride" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pay_keyboard_space"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:background="#f5f5f5" />
+
+                <TextView
+                    android:id="@+id/pay_keyboard_zero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#1d1c1e"
+                    android:textSize="22sp"
+                    android:text="0"
+                    android:background="@drawable/selector_gride" />
+
+                <ImageView
+                    android:id="@+id/pay_keyboard_del"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/pay_del"
+                    android:src="@drawable/face_del_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.hgj.paydialog.view.MDProgressBar
+            android:id="@+id/paypass_progress"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="80dp"
+            app:arcColor="#3F51B5"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
