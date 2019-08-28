@@ -1,5 +1,5 @@
 # PayDialog
-自定义支付密码弹窗，可拓展性高，界面友好，注释详细
+鑷畾涔夋敮浠樺瘑鐮佸脊绐楋紝鍙嫇灞曟�ч珮锛岀晫闈㈠弸濂斤紝娉ㄩ噴璇︾粏
 
-示例图片:  
-![示例图片](http://www.apkbus.com/data/attachment/forum/201803/19/152636l7nppah48dmz6765.gif)  
+绀轰緥鍥剧墖:  
+![绀轰緥鍥剧墖](https://upload-images.jianshu.io/upload_images/9305757-b5dfd3ef10cf70dc.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/360/format/webp)  
